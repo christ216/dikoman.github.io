@@ -1,0 +1,680 @@
+/* Import fonts*/
+@font-face {
+    font-family: 'bauhausSite';
+    src: url(../fonts/BauhausStd/BauhausStd-Medium.otf);
+}
+@font-face {
+    font-family: 'frutiger';
+    src: url(../fonts/FrutigerLTStd/FrutigerLTStd-LightItalic.otf);
+}
+@font-face {
+    font-family: 'FuturaStd_Bold';
+    src: url(../fonts/FuturaStd/FuturaStd-Bold.otf);
+}
+@font-face {
+    font-family: 'FuturaStd_Medium';
+    src: url(../fonts/FuturaStd/FuturaStd-Medium.otf);
+}
+
+html{
+    overflow-x: hidden;
+}
+
+/* Background image and work space */
+body {
+    background: url(../images/Photos/Flash-Art-Factory/CSC0111.jpg) no-repeat center 60% fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    top:0;
+    left:0;
+    margin: 0;
+}
+
+#global{
+   overflow: hidden;
+   position: fixed;
+   height: 100%;
+   width: 100%;
+   top: 0;
+   left: 0;
+   margin: 0;
+   padding: 0;
+}
+
+/* Adds a 'Fake' white opacity to the background-image as an alternative*/
+.background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: white;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+/* Adds a black background color to the top navigation */
+.topnav {
+    position: fixed;
+    background-color: #263C46;
+    top: 65px;
+    left:0px;
+    right:0px;
+    margin-top: -10px;
+    width: 100%;
+    height: 65px;
+    float: left;
+    z-index: 11;
+}
+
+/* Main logo on the navigation menu */
+.logoNav {
+    position: fixed;
+    top: 63px;
+    left: 115px;
+    z-index: 12;
+    padding-right: 72px;
+    width: 33px;
+}
+
+.logoTxtNav > p{
+    position: fixed;
+    top: 58px;
+    left: 160px;
+    z-index: 13;
+    color: white;
+    font-family: FuturaStd_Bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.logoTxtNav:hover p {
+    color: darkgrey;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: right;
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 39px 22px 10px;
+    font-family: FuturaStd_Bold;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.topnav a:nth-child(2) {
+    margin-right: 95px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    color: darkgrey;
+}
+
+/* Links in responsive haburger menu */
+.linkResponsive {
+    text-decoration: none;
+    color: white;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect on the links */
+.linkResponsive:hover {
+    color: darkgrey;
+}
+
+#menuToggle {
+    display: none;
+    position: fixed;
+    top: 65px;
+    right: 40px;
+    float: right;
+    -webkit-user-select: none;
+    user-select: none;
+    z-index: 13
+}
+
+#menuToggle input {
+    display: block;
+    width: 45px;
+    height: 37px;
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    cursor: pointer;
+    opacity: 0; /* hide this */
+    z-index: 15; /* and place it over the hamburger */
+    -webkit-touch-callout: none;
+    outline: none;
+}
+
+/* Hamburger */
+#menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    top:21px;
+    margin-bottom: 5px;
+    position: relative;
+    background: white;
+    border-radius: 3px;
+    z-index: 11;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+}
+
+/* Transform position */
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+/* Transform position */
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+/* Transform all the slices of hamburger into a crossmark */
+#menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: white;
+}
+
+/* Hide the middle one */
+#menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/* other direction */
+#menuToggle input:checked ~ span:nth-last-child(2) {
+    opacity: 1;
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+/* Make this absolute positioned at the top right of the screen */
+/*#menu {
+    position: relative;
+    width: 200px;
+    height: 900px;
+    left: 80px;
+    top: -100px;
+    padding: 50px;
+    padding-left: 25px;
+    padding-top: 25px;
+    margin-top: 10px;
+    background: black;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+    transition: transform 1.4s cubic-bezier(0.77,0.2,0.05,1.0);
+}*/
+
+/* Menu with a small margin top so it fit nicely on the navigation bar */
+#menu {
+    position: fixed;
+    width: 200px;
+    height: 1300px;
+    margin: -100px 0 0 -170px;
+    padding: 50px;
+    padding-left: 25px;
+    padding-top: 25px;
+    margin-top: 10px;
+    background: #263C46;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+    transition: transform 0.7s cubic-bezier(0.77,0.2,0.05,1.0);
+    overflow: hidden;
+}
+
+/* Responsive menu links */
+#menu li {
+    padding: 50px 0px 45px 0;
+    font-size: 22px;
+    text-align: center;
+    font-family: FuturaStd_Bold;
+}
+
+/* Fade it in from the left */
+#menuToggle input:checked ~ ul {
+    transform: scale(1,1);
+    opacity: 1;
+}
+
+.textePresentation{
+    
+    left: 50%; 
+    top: 8px;
+    -webkit-transform: translate(-50%, 0); 
+    position: fixed;
+    letter-spacing: 0.3px;
+    font-family: FuturaStd_Medium; 
+    font-size: 12px;
+    min-width: 580px;
+    z-index:2;
+    color: #263C46;
+    text-align: center;
+}
+
+/* Adds a logo on the main page in the center */
+.logoCentre {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    backface-visibility: hidden;
+    transform: translate(-50%,-50%) scale(0.8, 0.8);
+}
+
+#blackishBackground{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.8;
+    z-index: 3;
+    display: none;
+}
+
+.decoration1{
+    position: fixed;
+    bottom: 0;
+    float: left;
+    width: 25%
+}
+
+.decoration2{
+    position: absolute;
+    top: 0px;
+    float: right; 
+    right: 0px;
+    transform: rotate(180deg);
+    width: 25%;
+}
+
+.decoration3{
+    position: fixed;
+    width: 4.2em;
+    left: 0;
+    float: left;
+    top: 68px;
+}
+
+.decoration4{
+    position: fixed;
+    width: 4.2em;
+    right: 0;
+    float: right;
+    top: 68px;
+    transform: rotateY(180deg);
+    filter: blur();
+}
+
+.societeMasso{
+    position: fixed;
+    bottom: 5px;
+    float: right; 
+    right: 0;
+    display:flex;
+    flex-direction: row;
+    width: 400px;
+    height: auto;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.societeMasso img{
+    width: 120px;
+    height: 57px;
+}
+
+.societeMasso p{
+   font-family: FuturaStd_Medium;
+   font-size: 13px;
+   width: 220px;
+   color: #263C46;
+}
+
+
+
+/* Adds a logo on the main page in the center */
+.txtCentre {
+    font-family: 'frutiger';
+    font-size: 60px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    backface-visibility: hidden;
+    transform: translate(-50%,-50%) scale(0.8, 0.8);
+    width: 100%;
+    text-align: center
+}
+
+/* 1200 px width */
+@media (max-width: 1200px) {
+    
+
+}
+
+/* 1024 px width */
+@media (max-width: 1024px) {
+    
+    html{
+        overflow-x: hidden;
+    }
+    
+    body {
+        background: url(../images/Photos/Flash-Art-Factory/CSC0111.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        top:0;
+        left:0;
+        margin: 0;
+    }
+    
+   #global{
+       overflow: hidden;
+       position: fixed;
+       height: 100%;
+       width: 100%;
+       top: 0;
+       left: 0;
+       margin: 0;
+       padding: 0;
+    }
+    /*
+    .logoNav {
+        position: fixed;
+        top: 63px;
+        left: 30px;
+        z-index: 17;
+        width: 33px;
+    }
+    
+    .logoTxtNav > p{
+        position: fixed;
+        top: 58px;
+        left: 75px;
+        z-index: 13;
+        color: white;
+        font-family: FuturaStd_Bold;
+        font-size: 18px;
+        transition: color 0.3s ease;
+    }
+    
+    .decoration3{
+        display: none;
+    }
+    
+    .decoration4{
+        display: none;
+    }
+    
+    #menuToggle {
+        display: block;
+        position: relative;
+        top: 55px;
+        right: 40px;
+        float: right;
+        z-index: 16;
+        -webkit-user-select: none;
+        user-select: none;
+    }    
+    
+    .topnav a{
+        display: none;   
+    }
+    */
+    
+ #menuToggle {
+        display: block;
+        position: relative;
+        top: 55px;
+        right: 40px;
+        float: right;
+        z-index: 16;
+        -webkit-user-select: none;
+        user-select: none;
+    }    
+    
+    .topnav a{
+        display: none;   
+    }
+    
+    .logoNav {
+        position: fixed;
+        top: 63px;
+        left: 30px;
+        z-index: 17;
+        width: 33px;
+    }
+    
+    .logoTxtNav > p{
+        position: fixed;
+        top: 58px;
+        left: 75px;
+        z-index: 11;
+        color: white;
+        font-family: FuturaStd_Bold;
+        font-size: 18px;
+        transition: color 0.3s ease;
+    }
+    
+    .textePresentation{
+        left: 50%; 
+        top: 7px;
+        -webkit-transform: translate(-50%, 0); 
+        position: fixed;
+        letter-spacing: 0.3px;
+        font-family: FuturaStd_Medium; 
+        min-width: 500px;
+        font-size: 13px;
+    }
+    
+      
+    .textePresentation:nth-child(3){
+        left: 50%; 
+        top: 0px;
+        -webkit-transform: translate(-50%, 0); 
+        position: fixed;
+        letter-spacing: 0.3px;
+        font-family: FuturaStd_Medium; 
+        min-width: 500px;
+        font-size: 13px;
+    } 
+    
+    /* Adds a logo on the main page in the center */
+    .logoCentre {
+         display: none;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         backface-visibility: hidden;
+         transform: translate(-50%,-50%) scale(0.7, 0.7);
+    }   
+    
+    .decoration3{
+        display: none;
+    }
+    
+    .decoration4{
+        display: none;
+    }
+
+    
+}
+
+
+/* 768 px width */
+@media (max-width: 768px) {
+    
+  /* Responsive menu links */
+  #menu li {
+      padding: 50px 8vw 45px 0;
+      font-size: 22px;
+      text-align: center;
+      font-family: FuturaStd_Bold;
+  }
+    
+  #menuToggle input {
+      left: 93.4vw;
+  }
+    
+}
+
+
+
+
+
+/* On a resolution of 546px or smaller, smaller elements */
+@media (max-width: 546px) {
+
+    /* Responsive menu links */
+    #menu li {
+        padding: 50px 19vw 45px 0;
+        font-size: 22px;
+        text-align: center;
+        font-family: FuturaStd_Bold;
+    }
+    
+    #menuToggle input {
+      left: 92.7vw;
+    }
+    
+     .textePresentation{
+        left: 50%; 
+        top: 12px;
+        -webkit-transform: translate(-50%, 0); 
+        position: fixed;
+        letter-spacing: 0.3px;
+        font-family: FuturaStd_Medium; 
+        font-size: 10px !important;
+        min-width: 390px;
+    } 
+    
+    .textePresentation:nth-child(3){
+        left: 50%; 
+        top: 7px;
+        -webkit-transform: translate(-50%, 0); 
+        position: fixed;
+        letter-spacing: 0.3px;
+        font-family: FuturaStd_Medium; 
+        font-size: 10px !important;
+        min-width: 390px;
+    } 
+    
+}
+
+
+
+
+
+/* On a resolution of 415px or smaller, smaller elements */
+@media (max-width: 415px) {
+    
+    .logoTxtNav > p {
+        position: fixed;
+        top: 65px;
+        left: 75px;
+        z-index: 17;
+        color: white;
+        font-family: FuturaStd_Bold;
+        font-size: 14px;
+        transition: color 0.3s ease;
+    }
+    
+    /* Menu with a small margin top so it fit nicely on the navigation bar */
+    #menu {
+        position: fixed;
+        width: 200px;
+        height: 1300px;
+        margin: 0px 0px 0px -80px !important;
+        padding: 50px;
+        padding-left: 25px;
+        padding-top: 25px;
+        margin-top: 100px;
+        background: #263C46;
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+        transform-origin: 0% 0%;
+        transform: translate(100%, 0);
+        transition: transform 0.7s cubic-bezier(0.77,0.2,0.05,1.0);
+        overflow: hidden;
+    }
+    
+    /* Responsive menu links */
+    #menu li {
+        position: relative;
+        padding: 40px 30vw 45px 0 !important;
+        right: vw;
+        font-size: 12px !important;
+        text-align: center;
+        font-family: FuturaStd_Bold;
+    }
+    
+    .infoMagasin p:nth-child(1){
+        height: 2em;
+        font-family: FuturaStd_Medium;
+        font-size: 2em;
+        margin-top: 45px;
+        padding-bottom: 30px;
+        font-weight: bold;
+        letter-spacing: 0.04em;
+        flex-grow: 1;
+    }
+    
+    .ligne2{
+        display: flex;
+        position: absolute;
+        min-width: 200px;
+        top: 768px;
+        border-bottom: 3px ridge #263C46 ;
+        opacity: 0.8;
+    }
+    
+    .textePresentation{
+        left: 50%; 
+        top: 16px;
+        -webkit-transform: translate(-50%, 0); 
+        position: fixed;
+        letter-spacing: 0.3px;
+        font-family: FuturaStd_Medium; 
+        font-size: 7.2px !important;
+        min-width: 288px;
+    }
+    
+}
+
+
+/*Correction de la hauteur sur écran plus petit*/
+@media (max-height: 502px) {
+        
+    /* Responsive menu links */
+    #menu li {
+        padding: 40px 80px 5px 0 !important;
+        font-size: 12px !important;
+        text-align: center;
+        font-family: FuturaStd_Bold;
+    }
+    
+    
+}

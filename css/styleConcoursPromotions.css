@@ -1,0 +1,710 @@
+/* Import fonts*/
+@font-face {
+    font-family: 'bauhausSite';
+    src: url(../fonts/BauhausStd/BauhausStd-Medium.otf);
+}
+@font-face {
+    font-family: 'frutiger';
+    src: url(../fonts/FrutigerLTStd/FrutigerLTStd-LightItalic.otf);
+}
+@font-face {
+    font-family: 'FuturaStd_Bold';
+    src: url(../fonts/FuturaStd/FuturaStd-Bold.otf);
+}
+@font-face {
+    font-family: 'FuturaStd_Medium';
+    src: url(../fonts/FuturaStd/FuturaStd-Medium.otf);
+}
+
+html{
+    overflow-x: hidden;
+}
+
+/* Background image and work space */
+body {
+    background: url(../images/Photos/Flash-Art-Factory/CSC0111.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    top:0;
+    left:0;
+    margin: 0;
+}
+
+#global{
+   display: flex;
+   height: 1600px;
+   width: 100vw;
+   top: 0;
+   left: 0;
+   margin: 0;
+   padding: 0;
+}
+
+/* Adds a 'Fake' white opacity to the background-image as an alternative*/
+.background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: white;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+/* Adds a black background color to the top navigation */
+.topnav {
+    position: fixed;
+    background-color: #263C46;
+    top: 65px;
+    left:0px;
+    right:0px;
+    margin-top: -10px;
+    width: 100%;
+    height: 65px;
+    float: left;
+    z-index: 11;
+}
+
+/* Main logo on the navigation menu */
+.logoNav {
+    position: fixed;
+    top: 63px;
+    left: 115px;
+    z-index: 12;
+    padding-right: 72px;
+    width: 33px;
+}
+
+.logoTxtNav > p{
+    position: fixed;
+    top: 58px;
+    left: 160px;
+    z-index: 13;
+    color: white;
+    font-family: FuturaStd_Bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.logoTxtNav:hover p {
+    color: darkgrey;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: right;
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 39px 22px 10px;
+    font-family: FuturaStd_Bold;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.topnav a:nth-child(2) {
+    margin-right: 95px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    color: darkgrey;
+}
+
+/* Links in responsive haburger menu */
+.linkResponsive {
+    text-decoration: none;
+    color: white;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect on the links */
+.linkResponsive:hover {
+    color: darkgrey;
+}
+
+#menuToggle {
+    display: none;
+    position: fixed;
+    top: 65px;
+    right: 40px;
+    float: right;
+    -webkit-user-select: none;
+    user-select: none;
+    z-index: 13
+}
+
+#menuToggle input {
+    display: block;
+    width: 45px;
+    height: 37px;
+    position: absolute;
+    top: 10px;
+    left: 94vw;
+    cursor: pointer;
+    opacity: 0; /* hide this */
+    z-index: 15; /* and place it over the hamburger */
+    -webkit-touch-callout: none;
+    outline: none;
+}
+
+/* Hamburger */
+#menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    top: 21px;
+    left: 95vw;
+    margin-bottom: 5px;
+    position: relative;
+    background: white;
+    border-radius: 3px;
+    z-index: 11;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+}
+
+
+/* Transform position */
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+/* Transform position */
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+/* Transform all the slices of hamburger into a crossmark */
+#menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: white;
+}
+
+/* Hide the middle one */
+#menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/* other direction */
+#menuToggle input:checked ~ span:nth-last-child(2) {
+    opacity: 1;
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+/* Make this absolute positioned at the top right of the screen */
+/*#menu {
+    position: relative;
+    width: 200px;
+    height: 900px;
+    left: 80px;
+    top: -100px;
+    padding: 50px;
+    padding-left: 25px;
+    padding-top: 25px;
+    margin-top: 10px;
+    background: black;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+    transition: transform 1.4s cubic-bezier(0.77,0.2,0.05,1.0);
+}*/
+
+/* Menu with a small margin top so it fit nicely on the navigation bar */
+#menu {
+    position: fixed;
+    width: 200px;
+    height: 1300px;
+    margin: -100px 0 0 -170px;
+    padding: 50px;
+    left: 89vw;
+    padding-top: 25px;
+    margin-top: 10px;
+    background: #263C46;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+    transition: transform 0.7s cubic-bezier(0.77,0.2,0.05,1.0);
+    overflow: hidden;
+}
+
+/* Responsive menu links */
+#menu li {
+    padding: 50px 2vw 45px 0;
+    font-size: 22px;
+    text-align: center;
+    font-family: FuturaStd_Bold;
+}
+
+/* Fade it in from the left */
+#menuToggle input:checked ~ ul {
+    transform: scale(1,1);
+    opacity: 1;
+}
+
+.textePresentation{
+    left: 50%; 
+    top: 8px;
+    -webkit-transform: translate(-50%, 0); 
+    position: fixed;
+    letter-spacing: 0.3px;
+    font-family: FuturaStd_Medium; 
+    font-size: 12px;
+    min-width: 580px;
+    z-index:2;
+    color: #263C46;
+    text-align: center;
+}
+
+#blackishBackground{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.8;
+    z-index: 11;
+    display: none;
+}
+
+.decoration1{
+    position: fixed;
+    bottom: 0;
+    float: left;
+    width: 25%
+}
+
+.decoration2{
+    position: absolute;
+    top: 0px;
+    float: right; 
+    right: 0px;
+    transform: rotate(180deg);
+    width: 25%;
+}
+
+.decoration3{
+    position: fixed;
+    width: 4.2em;
+    left: 0;
+    float: left;
+    top: 68px;
+}
+
+.decoration4{
+    position: fixed;
+    width: 4.2em;
+    right: 0;
+    float: right;
+    top: 68px;
+    transform: rotateY(180deg);
+    filter: blur();
+}
+
+.conteneurGeneralConcours{
+    display: flex;
+    position: relative;
+    top: 170px;
+    width: 100vw;
+    height: auto;
+    justify-content: center;
+    align-content: center; 
+    background-color:whitesmoke;
+    color: #263C46;
+    flex-wrap: wrap;
+}
+
+.conteneurGeneralConcours p:nth-child(1){
+   position: absolute;
+   text-align: center;
+   font-family: FuturaStd_Medium;
+   font-size: 2em;
+   font-weight: bold;
+   letter-spacing: 0.04em;
+   top: -15px;
+}
+
+.conteneurGeneralConcours p:nth-child(2){
+   position: absolute;
+   text-align: center;
+   font-family: FuturaStd_Medium;
+   font-size: 24px;
+   top: 60px;
+   font-weight: bold;
+}
+
+.conteneurGeneralConcours p:nth-child(3){
+   position: absolute;
+   text-align: center;
+   font-family: FuturaStd_Medium;
+   font-size: 16px;
+   top: 110px;
+   width: 60vw;
+}
+
+.conteneurGeneralConcours p:nth-child(4){
+   position: absolute;
+   text-align: center;
+   font-family: FuturaStd_Medium;
+   font-size: 24px;
+   top: 180px;
+   font-weight: bold;
+}
+
+.conteneurGeneralConcours p:nth-child(5){
+   position: absolute;
+   text-align: center;
+   font-family: FuturaStd_Medium;
+   font-size: 16px;
+   top: 230px;
+   width: 50vw;
+}
+
+.conteneurGeneralConcours p:nth-child(6){
+   position: absolute;
+   text-align: center;
+   font-family: FuturaStd_Medium;
+   font-size: 24px;
+   top: 280px;
+   font-weight: bold;
+}
+
+.conteneurGeneralConcours p:nth-child(7){
+   position: absolute;
+   text-align: center;
+   font-family: FuturaStd_Medium;
+   font-size: 16px;
+   top: 330px;
+   width: 50vw;
+}
+
+
+
+/* 1200 px width */
+@media (max-width: 1200px) {
+    
+
+}
+
+/* 1024 px width */
+@media (max-width: 1024px) {
+    
+    html{
+        overflow-x: hidden;
+    }
+    
+    body {
+        background: url(../images/Photos/Flash-Art-Factory/CSC0111.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        top:0;
+        left:0;
+        margin: 0;
+    }
+    
+    #global{
+        display: flex;
+        height: 1000px;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .logoNav {
+        position: fixed;
+        top: 63px;
+        left: 30px;
+        z-index: 17;
+        width: 33px;
+    }
+    
+    .logoTxtNav > p{
+        position: fixed;
+        top: 58px;
+        left: 75px;
+        z-index: 13;
+        color: white;
+        font-family: FuturaStd_Bold;
+        font-size: 18px;
+        transition: color 0.3s ease;
+    }
+    
+    .textePresentation{
+        left: 50%; 
+        top: 7px;
+        -webkit-transform: translate(-50%, 0); 
+        position: fixed;
+        letter-spacing: 0.3px;
+        font-family: FuturaStd_Medium; 
+        min-width: 500px;
+        font-size: 13px;
+    }
+    
+      
+    .textePresentation:nth-child(3){
+        left: 50%; 
+        top: 0px;
+        -webkit-transform: translate(-50%, 0); 
+        position: fixed;
+        letter-spacing: 0.3px;
+        font-family: FuturaStd_Medium; 
+        min-width: 500px;
+        font-size: 13px;
+    } 
+    
+    .decoration3{
+        display: none;
+    }
+    
+    .decoration4{
+        display: none;
+    }
+    
+    #menuToggle {
+        display: block;
+        position: relative;
+        top: 55px;
+        right: 40px;
+        float: right;
+        z-index: 16;
+        -webkit-user-select: none;
+        user-select: none;
+    }    
+    
+    .topnav a{
+        display: none;   
+    }
+    
+    .conteneurGeneralConcours{
+        display: flex;
+        position: absolute;
+        top: 170px;
+        width: 100vw;
+        height: 2900px;
+        justify-content: center;
+        align-content: center; 
+        background-color:whitesmoke;
+        color: #263C46;
+    }
+    
+    .conteneurGeneralConcours p:nth-child(3){
+      position: absolute;
+      text-align: center;
+      font-family: FuturaStd_Medium;
+      font-size: 16px;
+      top: 110px;
+      width: 80vw;
+    }
+    
+     .conteneurGeneralConcours p:nth-child(5){
+      width: 80vw;
+    }
+    
+    .conteneurGeneralConcours p:nth-child(7){
+      width: 80vw;
+    }
+    
+}
+
+
+/* 768 px width */
+@media (max-width: 768px) {
+    
+  /* Responsive menu links */
+  #menu li {
+      padding: 50px 8vw 45px 0;
+      font-size: 22px;
+      text-align: center;
+      font-family: FuturaStd_Bold;
+  }
+    
+  #menuToggle input {
+      left: 93.4vw;
+  } 
+    
+    .conteneurGeneralConcours p:nth-child(1){
+        height: 2em;
+        font-family: FuturaStd_Medium;
+        font-size: 1.5em;
+        
+        font-weight: bold;
+        letter-spacing: 0.04em;
+    }
+    
+    .conteneurGeneralConcours p:nth-child(3){
+        font-size: 14px;
+    }
+  
+    .conteneurGeneralConcours p:nth-child(5){
+        font-size: 14px;
+    }
+    
+    .conteneurGeneralConcours p:nth-child(7){
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+/* On a resolution of 546px or smaller, smaller elements */
+@media (max-width: 546px) {
+    
+    .textePresentation{
+        left: 50%; 
+        top: 12px;
+        -webkit-transform: translate(-50%, 0); 
+        position: fixed;
+        letter-spacing: 0.3px;
+        font-family: FuturaStd_Medium; 
+        font-size: 10px !important;
+        min-width: 390px;
+        font-size: 13px;
+    } 
+    
+    /* Responsive menu links */
+    #menu li {
+        padding: 50px 19vw 45px 0;
+        font-size: 22px;
+        text-align: center;
+        font-family: FuturaStd_Bold;
+    }
+    
+    #menuToggle input {
+      left: 92.7vw;
+    }
+    
+    .conteneurGeneralConcours p:nth-child(3){
+        width: 90vw;
+        font-size: 13px;
+    }
+    
+    .conteneurGeneralConcours p:nth-child(5){
+        width: 90vw;
+        font-size: 13px;
+    }
+    
+}
+
+
+
+
+
+/* On a resolution of 415px or smaller, smaller elements */
+@media (max-width: 415px) {
+ 
+    .textePresentation{
+        left: 50%; 
+        top: 16px;
+        -webkit-transform: translate(-50%, 0); 
+        position: fixed;
+        letter-spacing: 0.3px;
+        font-family: FuturaStd_Medium; 
+        font-size: 7.2px !important;
+        min-width: 288px;
+    }
+    
+    .logoTxtNav > p {
+        position: fixed;
+        top: 65px;
+        left: 75px;
+        z-index: 17;
+        color: white;
+        font-family: FuturaStd_Bold;
+        font-size: 14px;
+        transition: color 0.3s ease;
+    }
+    
+    /* Menu with a small margin top so it fit nicely on the navigation bar */
+    #menu {
+        position: fixed;
+        width: 200px;
+        height: 1300px;
+        margin: 0px 0px 0px -80px !important;
+        padding: 50px;
+        padding-left: 25px;
+        padding-top: 25px;
+        margin-top: 100px;
+        background: #263C46;
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+        transform-origin: 0% 0%;
+        transform: translate(100%, 0);
+        transition: transform 0.7s cubic-bezier(0.77,0.2,0.05,1.0);
+        overflow: hidden;
+    }
+    
+    /* Responsive menu links */
+    #menu li {
+        position: relative;
+        padding: 40px 30vw 45px 0 !important;
+        right: vw;
+        font-size: 12px !important;
+        text-align: center;
+        font-family: FuturaStd_Bold;
+    }
+
+    
+    .conteneurGeneralConcours p:nth-child(4){
+        top: 200px;
+    }
+    
+    .conteneurGeneralConcours p:nth-child(5){
+        width: 90vw;
+        font-size: 13px;
+        top: 250px;
+    }
+    
+}
+
+
+
+/* On a resolution of 415px or smaller, smaller elements */
+@media (max-width: 320px) {
+ 
+    
+}
+
+
+
+/*Correction de la hauteur sur écran plus petit*/
+@media (min-height: 1300px) {
+    
+}
+
+
+
+/*Correction de la hauteur sur écran plus petit*/
+@media (max-height: 502px) {
+        
+    /* Responsive menu links */
+    #menu li {
+        padding: 40px 80px 5px 0 !important;
+        font-size: 12px !important;
+        text-align: center;
+        font-family: FuturaStd_Bold;
+    }
+    
+    
+}
