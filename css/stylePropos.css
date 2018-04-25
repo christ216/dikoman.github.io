@@ -142,11 +142,11 @@ body {
 
 #menuToggle input {
     display: block;
-    width: 45px;
-    height: 37px;
+    width: 51px;
+    height: 40px;
     position: absolute;
     top: 10px;
-    left: -10px;
+    margin-left: -10px;
     cursor: pointer;
     opacity: 0; /* hide this */
     z-index: 15; /* and place it over the hamburger */
@@ -535,9 +535,6 @@ body {
       font-family: FuturaStd_Bold;
   }
     
-  #menuToggle input {
-      left: 93.4vw;
-  }
     
 }
 
@@ -554,10 +551,6 @@ body {
         font-size: 22px;
         text-align: center;
         font-family: FuturaStd_Bold;
-    }
-    
-    #menuToggle input {
-      left: 92.7vw;
     }
     
      .textePresentation{
