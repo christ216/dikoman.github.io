@@ -345,7 +345,7 @@ body {
    text-align: center;
    font-family: FuturaStd_Medium;
    font-size: 24px;
-   top: 60px;
+   top: 120px;
    font-weight: bold;
 }
 
@@ -354,7 +354,7 @@ body {
    text-align: center;
    font-family: FuturaStd_Medium;
    font-size: 16px;
-   top: 110px;
+   top: 170px;
    width: 60vw;
 }
 
@@ -363,7 +363,7 @@ body {
    text-align: center;
    font-family: FuturaStd_Medium;
    font-size: 24px;
-   top: 180px;
+   top: 250px;
    font-weight: bold;
 }
 
@@ -372,7 +372,7 @@ body {
    text-align: center;
    font-family: FuturaStd_Medium;
    font-size: 16px;
-   top: 230px;
+   top: 300px;
    width: 50vw;
 }
 
@@ -381,7 +381,7 @@ body {
    text-align: center;
    font-family: FuturaStd_Medium;
    font-size: 24px;
-   top: 280px;
+   top: 340px;
    font-weight: bold;
 }
 
@@ -390,8 +390,19 @@ body {
    text-align: center;
    font-family: FuturaStd_Medium;
    font-size: 16px;
-   top: 330px;
+   top: 390px;
    width: 50vw;
+}
+
+.conteneurGeneralConcours p:nth-child(8){
+   position: absolute;
+   text-align: center;
+   font-family: FuturaStd_Medium;
+   font-size: 16px;
+   top: 60px;
+   width: 50vw;
+   border: 3px outset #c3d667;
+   font-weight: bold;
 }
 
 
@@ -512,7 +523,7 @@ body {
       text-align: center;
       font-family: FuturaStd_Medium;
       font-size: 16px;
-      top: 110px;
+      top: 180px;
       width: 80vw;
     }
     
@@ -551,8 +562,13 @@ body {
         letter-spacing: 0.04em;
     }
     
+    .conteneurGeneralConcours p:nth-child(2){
+        top: 140px;
+    }
+    
     .conteneurGeneralConcours p:nth-child(3){
         font-size: 14px;
+        top: 190px
     }
   
     .conteneurGeneralConcours p:nth-child(5){
@@ -600,11 +616,18 @@ body {
         font-size: 13px;
     }
     
+   
+    
     .conteneurGeneralConcours p:nth-child(5){
         width: 90vw;
         font-size: 13px;
     }
     
+    
+    .conteneurGeneralConcours p:nth-child(8){
+        width: 70vw;
+        
+    }
 }
 
 
@@ -667,13 +690,27 @@ body {
 
     
     .conteneurGeneralConcours p:nth-child(4){
-        top: 200px;
+        top: 280px;
     }
     
     .conteneurGeneralConcours p:nth-child(5){
         width: 90vw;
         font-size: 13px;
-        top: 250px;
+        top: 330px;
+    }
+    
+    .conteneurGeneralConcours p:nth-child(6){
+       
+        top: 360px;
+    }
+    
+    .conteneurGeneralConcours p:nth-child(7){
+        top: 410px;
+    }
+    
+    .conteneurGeneralConcours p:nth-child(8){
+        font-size: 13px;
+        width: 90%;
     }
     
 }

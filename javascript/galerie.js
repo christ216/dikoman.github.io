@@ -16,11 +16,13 @@ $(document).ready(function() {
     
     
     
-    
+    /*
     $(".photo1").click(function() {
         $('#container').fadeOut(1000);
         $('#container4').fadeTo(1000, 1);
         $('#container4').css("z-index", 11);
+        
+        $('.infoPrixDrainageLymphatique').fadeIn(1000);
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;   
     });
@@ -32,6 +34,12 @@ $(document).ready(function() {
                         
                      });
     
+                    $("#container4 .retour p:nth-child(3)").click(function() {
+                        $('.conteneurInfoDrainage').css('visibility', 'visible');
+                        $('.conteneurInfoDrainage').fadeTo(1000, 1);
+                        $('.conteneurInfoDrainage').css("z-index", 18);
+                     });
+    
                      $(".infoDrainage p:nth-child(1)").click(function() {
                         $('.conteneurInfoDrainage').css('visibility', 'hidden');
                         $('.conteneurInfoDrainage').fadeTo(1000, 0);
@@ -39,14 +47,14 @@ $(document).ready(function() {
                      });
     
         $("#container4 .retour p:nth-child(2)").click(function() {
-              /* Au click du bouton retour dans la section Kinésithérapie, on nous ramène aux services de base + On arrive en haut de la page */
+              /* Au click du bouton retour dans la section Kinésithérapie, on nous ramène aux services de base + On arrive en haut de la page *//*
               $('#container').fadeIn(1000);
               $('#container4').fadeTo(1000, 0);
               $('#container4').css("z-index", 8);
               document.body.scrollTop = 0; 
               document.documentElement.scrollTop = 0; 
           });
-    
+    */
     
     
     
@@ -146,6 +154,13 @@ $(document).ready(function() {
                         
                      });
     
+                $("#container2 .retour p:nth-child(3)").click(function() {
+                        $('.conteneurInfoKine').css('visibility', 'visible');
+                        $('.conteneurInfoKine').fadeTo(1000, 1);
+                        $('.conteneurInfoKine').css("z-index", 18);
+                        
+                     });
+    
                      $(".infoKine p:nth-child(1)").click(function() {
                         $('.conteneurInfoKine').css('visibility', 'hidden');
                         $('.conteneurInfoKine').fadeTo(1000, 0);
@@ -189,12 +204,15 @@ $(document).ready(function() {
                            $('.conteneurMarcoDyotte').fadeTo(1000, 1);
                            $('.conteneurMarcoDyotte').css("z-index", 17);
                         });
+    
         
                         $(".infoMarcoDyotte p:nth-child(1)").click(function() {
                            $('.conteneurMarcoDyotte').css('visibility', 'hidden');
                            $('.conteneurMarcoDyotte').fadeTo(1000, 0);
                            $('.conteneurMarcoDyotte').css("z-index", 1);
                         });
+    
+    
     
                $("#retourDeOsteopathie").click(function() {
                /* On enlève le service choisi pour arriver à la section Kinésithérapie */
@@ -483,7 +501,7 @@ $(document).ready(function() {
     
     
         $(".photo13").click(function() {
-           $('#container4').fadeTo(1000, 0);
+           $('#container3').fadeTo(1000, 0);
            $('#containerPrix').fadeTo(1000, 1);
            
            $('#containerPrix').css("z-index", 11);
@@ -499,7 +517,7 @@ $(document).ready(function() {
     
             $("#retourDeEnveloppementCorporel").click(function() {
                $('#containerPrix').fadeTo(1000, 0);
-               $('#container4').fadeTo(1000, 1);
+               $('#container3').fadeTo(1000, 1);
                
                $('#containerPrix').css("z-index", 8);
                $('#containerPrix #retourDeEnveloppementCorporel').css("z-index", 8);
@@ -519,7 +537,7 @@ $(document).ready(function() {
     
     
         $(".photo14").click(function() {
-           $('#container4').fadeTo(1000, 0);
+           $('#container3').fadeTo(1000, 0);
            $('#containerPrix').fadeTo(1000, 1);
            
            $('#containerPrix').css("z-index", 11);
@@ -535,7 +553,7 @@ $(document).ready(function() {
     
             $("#retourDeExfoliationCorporelle").click(function() {
                $('#containerPrix').fadeTo(1000, 0);
-               $('#container4').fadeTo(1000, 1);
+               $('#container3').fadeTo(1000, 1);
                
                $('#containerPrix').css("z-index", 8);
                $('#containerPrix #retourDeExfoliationCorporelle').css("z-index", 8);
@@ -554,24 +572,58 @@ $(document).ready(function() {
     
     
     
-        $(".photo15").click(function() {
-           $('#container4').fadeTo(1000, 0);
+        $(".photo1").click(function() {
+           $('#container').fadeTo(1000, 0);
            $('#containerPrix').fadeTo(1000, 1);
            
-           $('#containerPrix').css("z-index", 11);
+           $('#containerPrix').css("z-index", 10);
            $('#containerPrix #retourDeDrainageLymphatique').css("z-index", 12);
            
            $('#containerPrix #retourDeDrainageLymphatique').fadeTo(1000, 1);
            $('#containerPrix .photo15').fadeIn(1000);
            $('.infoPrixDrainageLymphatique').fadeIn(1000);
+            
+            //$('#container').css("height");
+            
+            /*
+           if (window.matchMedia('(max-width: 1024px)').matches) {
+              $('#container').css("height", "1000px");       
+           }    
+           if (window.matchMedia('(max-width: 768px)').matches) {
+              $('#container').css("height", "800px");       
+           }*/
+            
            
            document.body.scrollTop = 0; 
            document.documentElement.scrollTop = 0;   
-    });
+        });
     
-            $("#retourDeDrainageLymphatique").click(function() {
+                    
+                    $("#retourDeDrainageLymphatique .questionDrainage").click(function() {
+                        $('.conteneurInfoDrainage').css('visibility', 'visible');
+                        $('.conteneurInfoDrainage').fadeTo(1000, 1);
+                        $('.conteneurInfoDrainage').css("z-index", 18);
+                        
+                     });
+    
+    
+                    $("#retourDeDrainageLymphatique p:nth-child(3)").click(function() {
+                        $('.conteneurInfoDrainage').css('visibility', 'visible');
+                        $('.conteneurInfoDrainage').fadeTo(1000, 1);
+                        $('.conteneurInfoDrainage').css("z-index", 18);
+                     });
+                    
+    
+                     $(".infoDrainage p:nth-child(1)").click(function() {
+                        $('.conteneurInfoDrainage').css('visibility', 'hidden');
+                        $('.conteneurInfoDrainage').fadeTo(1000, 0);
+                        $('.conteneurInfoDrainage').css("z-index", 1);
+                     });
+    
+    
+            $(".retourDraina").click(function() {
                $('#containerPrix').fadeTo(1000, 0);
-               $('#container4').fadeTo(1000, 1);
+               $('#container').fadeTo(1000, 1);
                
                $('#containerPrix').css("z-index", 8);
                $('#containerPrix #retourDeDrainageLymphatique').css("z-index", 8);

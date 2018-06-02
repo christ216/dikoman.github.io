@@ -254,6 +254,17 @@ body {
     opacity: 1;
 }
 
+.infoPageAcc{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 6.4em;
+    background: rgba(155, 240, 82, 0.3);
+    font-family: FuturaStd_Medium;
+    font-size: 17px;
+    line-height: 24px;
+}
+
 .textePresentation{
     display: none;
     left: 50%; 
@@ -277,6 +288,19 @@ body {
     left: 50%;
     backface-visibility: hidden;
     transform: translate(-50%,-50%) scale(0.8, 0.8);
+}
+
+.logoPaie{
+    position: fixed;
+    bottom: 0.6em;
+    width: 200px;
+    left: 0.5em;
+    opacity: 0.8
+}
+
+.logoPaie2{
+    display: none;
+  
 }
 
 #blackishBackground{
@@ -343,13 +367,13 @@ body {
 }
 
 .societeMasso img{
-    width: 120px;
-    height: 57px;
+    width: 180px;
+    height: 105px;
 }
 
 .societeMasso p{
    font-family: FuturaStd_Medium;
-   font-size: 13px;
+   font-size: 16px;
    width: 220px;
    color: #263C46;
 }
@@ -459,6 +483,27 @@ body {
         display: none;
     }
     
+    .societeMasso img{
+        width: 150px;
+        height: 75px;
+    }
+    
+    .societeMasso p{
+        font-family: FuturaStd_Medium;
+        font-size: 14px;
+        width: 220px;
+        color: #263C46;
+    }
+    
+    .logoPaie{
+        position: fixed;
+        bottom: 0.6em;
+        width: 160px;
+        left: 0.5em;
+        opacity: 0.8
+    }
+    
+    
     
 }
 
@@ -489,6 +534,21 @@ body {
         font-size: 10px !important;
         min-width: 390px;
     } 
+    
+    .logoPaie{
+        display: none;
+        bottom: 6em;
+        left: 6.6em
+    }
+    
+    .logoPaie2{
+        display: block;
+        position: fixed;
+        right: 1em;
+        bottom: 5.9em;
+        width: 160px;
+        opacity: 0.8
+    }
     
 }
 
@@ -564,21 +624,22 @@ body {
         right: 4px;
         display:flex;
         flex-direction: row;
-        width: 200px;
+        width: 250px;
         height: auto;
         justify-content: flex-end;
         flex-grow: 1;
     }
     
     .societeMasso img{
-        width: 60px;
-        height: 30px;
+        width: 110px;
+        height: 60px;
+        margin-top: 0.8em;
     }
     
     .societeMasso p{
         font-family: FuturaStd_Medium;
-        font-size: 7px;
-        width: 110px;
+        font-size: 12px;
+        width: 140px;
         color: #263C46;
     }
     
