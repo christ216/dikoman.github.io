@@ -345,7 +345,7 @@ body {
    text-align: center;
    font-family: FuturaStd_Medium;
    font-size: 24px;
-   top: 120px;
+   top: 650px;
    font-weight: bold;
 }
 
@@ -354,7 +354,7 @@ body {
    text-align: center;
    font-family: FuturaStd_Medium;
    font-size: 16px;
-   top: 170px;
+   top: 700px;
    width: 60vw;
 }
 
@@ -363,7 +363,7 @@ body {
    text-align: center;
    font-family: FuturaStd_Medium;
    font-size: 24px;
-   top: 250px;
+   top: 780px;
    font-weight: bold;
 }
 
@@ -372,7 +372,7 @@ body {
    text-align: center;
    font-family: FuturaStd_Medium;
    font-size: 16px;
-   top: 300px;
+   top: 830px;
    width: 50vw;
 }
 
@@ -381,7 +381,7 @@ body {
    text-align: center;
    font-family: FuturaStd_Medium;
    font-size: 24px;
-   top: 340px;
+   top: 870px;
    font-weight: bold;
 }
 
@@ -390,7 +390,7 @@ body {
    text-align: center;
    font-family: FuturaStd_Medium;
    font-size: 16px;
-   top: 390px;
+   top: 920px;
    width: 50vw;
 }
 
@@ -405,6 +405,109 @@ body {
    font-weight: bold;
 }
 
+.noel{
+    position: absolute;
+    font-family: FuturaStd_Medium;
+    top: 100px;
+    width: 50vw !important;
+    text-align: center;
+    
+}
+
+.noel h1:nth-child(1){
+    
+}
+
+.noel p:nth-child(2){
+    top: 60px;
+    font-size: 20px;
+    font-weight: 100;
+    width: 50vw;
+    text-align: center;
+}
+
+.noel p:nth-child(3){
+    top: 145px;
+    font-size: 20px !important;
+    width: 50vw;
+    font-family: FuturaStd_Medium;
+        
+}
+
+.noel p:nth-child(4){
+    top: 190px;
+    font-size: 18px;
+    width: 50vw;
+}
+
+.noel p:nth-child(5){
+    top: 215px;
+    font-size: 16px;
+    width: 50vw;
+}
+
+.noel p:nth-child(6){
+    top: 237px;
+    font-size: 16px;
+    width: 50vw;
+    font-weight: 100
+}
+
+.noel p:nth-child(7){
+    top: 270px;
+    font-size: 18px;
+    width: 50vw;
+    font-weight: bold;
+}
+
+.noel p:nth-child(8){
+    top: 295px;
+    font-size: 16px;
+    width: 50vw;
+    border: none;
+    font-weight: 100
+}
+
+.noel p:nth-child(9){
+    position: absolute;
+    top: 315px;
+    font-size: 16px;
+    width: 50vw;
+    font-weight: 100
+}
+
+.noel p:nth-child(10){
+    position: absolute;
+    top: 350px;
+    font-size: 18px;
+    width: 50vw;
+    font-weight: bold;
+}
+
+.noel p:nth-child(11){
+    position: absolute;
+    top: 375px;
+    font-size: 16px;
+    width: 50vw;
+    border: none;
+    font-weight: 100
+}
+
+.noel p:nth-child(12){
+    position: absolute;
+    top: 400px;
+    font-size: 16px;
+    width: 50vw;
+    font-weight: 100
+}
+
+.noel h2{
+    position: absolute;
+    top: 440px;
+    font-size: 18px;
+    width: 50vw;
+    font-weight: 600
+}
 
 
 /* 1200 px width */
@@ -523,9 +626,31 @@ body {
       text-align: center;
       font-family: FuturaStd_Medium;
       font-size: 16px;
-      top: 180px;
+      top: 700px;
       width: 80vw;
     }
+    
+    .conteneurGeneralConcours p:nth-child(2){
+   position: absolute;
+   text-align: center;
+   font-family: FuturaStd_Medium;
+   font-size: 24px;
+   top: 650px;
+   font-weight: bold;
+}
+    
+    .conteneurGeneralConcours p:nth-child(8){
+   position: absolute;
+   text-align: center;
+   font-family: FuturaStd_Medium;
+   font-size: 16px;
+   top: 50px;
+   width: 80vw;
+   border: 3px outset #c3d667;
+   font-weight: bold;
+}
+
+
     
      .conteneurGeneralConcours p:nth-child(5){
       width: 80vw;
@@ -534,6 +659,106 @@ body {
     .conteneurGeneralConcours p:nth-child(7){
       width: 80vw;
     }
+    
+    .noel{
+    position: absolute;
+    font-family: FuturaStd_Medium;
+    top: 100px;
+    width: 80vw !important;
+    text-align: center;
+    
+}
+    
+    
+.noel p:nth-child(2){
+    top: 60px;
+    font-size: 20px;
+    font-weight: 100;
+    width: 80vw;
+}
+
+.noel p:nth-child(3){
+    top: 150px;
+    font-size: 20px !important;
+    width: 80vw;
+    font-family: FuturaStd_Medium;
+        
+}
+
+.noel p:nth-child(4){
+    top: 190px;
+    font-size: 18px;
+    width: 80vw;
+}
+
+.noel p:nth-child(5){
+    top: 215px;
+    font-size: 16px;
+    width: 80vw;
+}
+
+.noel p:nth-child(6){
+    top: 237px;
+    font-size: 16px;
+    width: 80vw;
+    font-weight: 100
+}
+
+.noel p:nth-child(7){
+    top: 270px;
+    font-size: 18px;
+    width: 80vw;
+    font-weight: bold;
+}
+
+.noel p:nth-child(8){
+    top: 295px;
+    font-size: 16px;
+    width: 80vw;
+    border: none;
+    font-weight: 100
+}
+
+.noel p:nth-child(9){
+    position: absolute;
+    top: 315px;
+    font-size: 16px;
+    width: 80vw;
+    font-weight: 100
+}
+
+.noel p:nth-child(10){
+    position: absolute;
+    top: 350px;
+    font-size: 18px;
+    width: 80vw;
+    font-weight: bold;
+}
+
+.noel p:nth-child(11){
+    position: absolute;
+    top: 375px;
+    font-size: 16px;
+    width: 80vw;
+    border: none;
+    font-weight: 100
+}
+
+.noel p:nth-child(12){
+    position: absolute;
+    top: 400px;
+    font-size: 16px;
+    width: 80vw;
+    font-weight: 100
+}
+
+.noel h2{
+    position: absolute;
+    top: 440px;
+    font-size: 18px;
+    width: 80vw;
+    font-weight: 600
+}
     
 }
 
@@ -578,6 +803,114 @@ body {
     .conteneurGeneralConcours p:nth-child(7){
         font-size: 14px;
     }
+    
+        .conteneurGeneralConcours p:nth-child(3){
+     top:700px
+    }
+    
+    .conteneurGeneralConcours p:nth-child(2){
+   top: 650px
+}
+    
+        .noel{
+    position: absolute;
+    font-family: FuturaStd_Medium;
+    top: 100px;
+    width: 80vw !important;
+    text-align: center;
+    
+}
+    
+    
+.noel p:nth-child(2){
+    top: 60px;
+    font-size: 20px;
+    font-weight: 100;
+    width: 80vw;
+}
+
+.noel p:nth-child(3){
+    top: 150px;
+    font-size: 20px !important;
+    width: 80vw;
+    font-family: FuturaStd_Medium;
+        
+}
+
+.noel p:nth-child(4){
+    top: 190px;
+    font-size: 18px;
+    width: 80vw;
+}
+
+.noel p:nth-child(5){
+    top: 215px;
+    font-size: 16px;
+    width: 80vw;
+}
+
+.noel p:nth-child(6){
+    top: 237px;
+    font-size: 16px;
+    width: 80vw;
+    font-weight: 100
+}
+
+.noel p:nth-child(7){
+    top: 270px;
+    font-size: 18px;
+    width: 80vw;
+    font-weight: bold;
+}
+
+.noel p:nth-child(8){
+    top: 295px;
+    font-size: 16px;
+    width: 80vw;
+    border: none;
+    font-weight: 100
+}
+
+.noel p:nth-child(9){
+    position: absolute;
+    top: 315px;
+    font-size: 16px;
+    width: 80vw;
+    font-weight: 100
+}
+
+.noel p:nth-child(10){
+    position: absolute;
+    top: 350px;
+    font-size: 18px;
+    width: 80vw;
+    font-weight: bold;
+}
+
+.noel p:nth-child(11){
+    position: absolute;
+    top: 375px;
+    font-size: 16px;
+    width: 80vw;
+    border: none;
+    font-weight: 100
+}
+
+.noel p:nth-child(12){
+    position: absolute;
+    top: 400px;
+    font-size: 16px;
+    width: 80vw;
+    font-weight: 100
+}
+
+.noel h2{
+    position: absolute;
+    top: 440px;
+    font-size: 18px;
+    width: 80vw;
+    font-weight: 600
+}
 }
 
 
@@ -625,9 +958,109 @@ body {
     
     
     .conteneurGeneralConcours p:nth-child(8){
-        width: 70vw;
-        
+        width: 90vw;
+        top: 40px;
     }
+    
+            .noel{
+    position: absolute;
+    font-family: FuturaStd_Medium;
+    top: 100px;
+    width: 90vw !important;
+    text-align: center;
+    
+}
+    
+    
+.noel p:nth-child(2){
+    top: 60px;
+    font-size: 17px;
+    font-weight: 100;
+    width: 90vw;
+}
+
+.noel p:nth-child(3){
+    top: 150px;
+    font-size: 17px !important;
+    width: 90vw;
+    font-family: FuturaStd_Medium;
+        
+}
+
+.noel p:nth-child(4){
+    top: 190px;
+    font-size: 18px;
+    width: 90vw;
+}
+
+.noel p:nth-child(5){
+    top: 215px;
+    font-size: 16px;
+    width: 90vw;
+}
+
+.noel p:nth-child(6){
+    top: 237px;
+    font-size: 16px;
+    width: 90vw;
+    font-weight: 100
+}
+
+.noel p:nth-child(7){
+    top: 270px;
+    font-size: 18px;
+    width: 90vw;
+    font-weight: bold;
+}
+
+.noel p:nth-child(8){
+    top: 295px;
+    font-size: 16px;
+    width: 90vw;
+    border: none;
+    font-weight: 100
+}
+
+.noel p:nth-child(9){
+    position: absolute;
+    top: 315px;
+    font-size: 16px;
+    width: 90vw;
+    font-weight: 100
+}
+
+.noel p:nth-child(10){
+    position: absolute;
+    top: 350px;
+    font-size: 18px;
+    width: 90vw;
+    font-weight: bold;
+}
+
+.noel p:nth-child(11){
+    position: absolute;
+    top: 375px;
+    font-size: 16px;
+    width: 90vw;
+    border: none;
+    font-weight: 100
+}
+
+.noel p:nth-child(12){
+    position: absolute;
+    top: 400px;
+    font-size: 16px;
+    width: 90vw;
+    font-weight: 100
+}
+
+.noel h2{
+    position: absolute;
+    top: 440px;
+    font-size: 18px;
+    width: 90vw;
+    font-weight: 600
+}
 }
 
 
@@ -690,28 +1123,131 @@ body {
 
     
     .conteneurGeneralConcours p:nth-child(4){
-        top: 280px;
+        top: 780px;
     }
     
     .conteneurGeneralConcours p:nth-child(5){
         width: 90vw;
         font-size: 13px;
-        top: 330px;
+        top: 835px;
     }
     
     .conteneurGeneralConcours p:nth-child(6){
        
-        top: 360px;
+        top: 860px;
     }
     
     .conteneurGeneralConcours p:nth-child(7){
-        top: 410px;
+        top: 900px;
     }
     
     .conteneurGeneralConcours p:nth-child(8){
         font-size: 13px;
         width: 90%;
     }
+    
+                .noel{
+    position: absolute;
+    font-family: FuturaStd_Medium;
+    top: 100px;
+    width: 90vw !important;
+    text-align: center;
+    
+}
+  
+.noel h1:nth-child(1){
+  font-size: 26px;
+}
+    
+.noel p:nth-child(2){
+    top: 60px;
+    font-size: 16px;
+    font-weight: 100;
+    width: 90vw;
+}
+
+.noel p:nth-child(3){
+    top: 150px;
+    font-size: 16px !important;
+    width: 90vw;
+    font-family: FuturaStd_Medium;
+        
+}
+
+.noel p:nth-child(4){
+    top: 190px;
+    font-size: 18px;
+    width: 90vw;
+}
+
+.noel p:nth-child(5){
+    top: 215px;
+    font-size: 16px;
+    width: 90vw;
+}
+
+.noel p:nth-child(6){
+    top: 237px;
+    font-size: 16px;
+    width: 90vw;
+    font-weight: 100
+}
+
+.noel p:nth-child(7){
+    top: 270px;
+    font-size: 18px;
+    width: 90vw;
+    font-weight: bold;
+}
+
+.noel p:nth-child(8){
+    top: 295px;
+    font-size: 16px;
+    width: 90vw;
+    border: none;
+    font-weight: 100
+}
+
+.noel p:nth-child(9){
+    position: absolute;
+    top: 315px;
+    font-size: 16px;
+    width: 90vw;
+    font-weight: 100
+}
+
+.noel p:nth-child(10){
+    position: absolute;
+    top: 350px;
+    font-size: 16px;
+    width: 90vw;
+    font-weight: bold;
+}
+
+.noel p:nth-child(11){
+    position: absolute;
+    top: 375px;
+    font-size: 16px;
+    width: 90vw;
+    border: none;
+    font-weight: 100
+}
+
+.noel p:nth-child(12){
+    position: absolute;
+    top: 400px;
+    font-size: 16px;
+    width: 90vw;
+    font-weight: 100
+}
+
+.noel h2{
+    position: absolute;
+    top: 440px;
+    font-size: 18px;
+    width: 90vw;
+    font-weight: 600
+}
     
 }
 
