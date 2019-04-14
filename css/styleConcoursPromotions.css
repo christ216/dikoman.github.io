@@ -345,7 +345,7 @@ body {
    text-align: center;
    font-family: FuturaStd_Medium;
    font-size: 24px;
-   top: 650px;
+   top: 120px;
    font-weight: bold;
 }
 
@@ -354,7 +354,7 @@ body {
    text-align: center;
    font-family: FuturaStd_Medium;
    font-size: 16px;
-   top: 700px;
+   top: 170px;
    width: 60vw;
 }
 
@@ -363,7 +363,7 @@ body {
    text-align: center;
    font-family: FuturaStd_Medium;
    font-size: 24px;
-   top: 780px;
+   top: 250px;
    font-weight: bold;
 }
 
@@ -372,7 +372,7 @@ body {
    text-align: center;
    font-family: FuturaStd_Medium;
    font-size: 16px;
-   top: 830px;
+   top: 300px;
    width: 50vw;
 }
 
@@ -381,7 +381,7 @@ body {
    text-align: center;
    font-family: FuturaStd_Medium;
    font-size: 24px;
-   top: 870px;
+   top: 380px;
    font-weight: bold;
 }
 
@@ -390,7 +390,7 @@ body {
    text-align: center;
    font-family: FuturaStd_Medium;
    font-size: 16px;
-   top: 920px;
+   top: 430px;
    width: 50vw;
 }
 
@@ -626,7 +626,7 @@ body {
       text-align: center;
       font-family: FuturaStd_Medium;
       font-size: 16px;
-      top: 700px;
+      top: 170px;
       width: 80vw;
     }
     
@@ -635,7 +635,7 @@ body {
    text-align: center;
    font-family: FuturaStd_Medium;
    font-size: 24px;
-   top: 650px;
+   top: 120px;
    font-weight: bold;
 }
     
@@ -805,11 +805,11 @@ body {
     }
     
         .conteneurGeneralConcours p:nth-child(3){
-     top:700px
+     top:170px
     }
     
     .conteneurGeneralConcours p:nth-child(2){
-   top: 650px
+   top: 120px
 }
     
         .noel{
@@ -1123,22 +1123,22 @@ body {
 
     
     .conteneurGeneralConcours p:nth-child(4){
-        top: 780px;
+        
     }
     
     .conteneurGeneralConcours p:nth-child(5){
         width: 90vw;
         font-size: 13px;
-        top: 835px;
+        
     }
     
     .conteneurGeneralConcours p:nth-child(6){
        
-        top: 860px;
+        
     }
     
     .conteneurGeneralConcours p:nth-child(7){
-        top: 900px;
+        
     }
     
     .conteneurGeneralConcours p:nth-child(8){
