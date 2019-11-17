@@ -345,7 +345,7 @@ body {
    text-align: center;
    font-family: FuturaStd_Medium;
    font-size: 24px;
-   top: 120px;
+   top: 650px;
    font-weight: bold;
 }
 
@@ -354,7 +354,7 @@ body {
    text-align: center;
    font-family: FuturaStd_Medium;
    font-size: 16px;
-   top: 170px;
+   top: 700px;
    width: 60vw;
 }
 
@@ -363,7 +363,7 @@ body {
    text-align: center;
    font-family: FuturaStd_Medium;
    font-size: 24px;
-   top: 250px;
+   top: 780px;
    font-weight: bold;
 }
 
@@ -372,7 +372,7 @@ body {
    text-align: center;
    font-family: FuturaStd_Medium;
    font-size: 16px;
-   top: 300px;
+   top: 830px;
    width: 50vw;
 }
 
@@ -381,7 +381,7 @@ body {
    text-align: center;
    font-family: FuturaStd_Medium;
    font-size: 24px;
-   top: 380px;
+   top: 870px;
    font-weight: bold;
 }
 
@@ -390,7 +390,7 @@ body {
    text-align: center;
    font-family: FuturaStd_Medium;
    font-size: 16px;
-   top: 430px;
+   top: 920px;
    width: 50vw;
 }
 
@@ -503,7 +503,7 @@ body {
 
 .noel h2{
     position: absolute;
-    top: 440px;
+    top: 400px;
     font-size: 18px;
     width: 50vw;
     font-weight: 600
@@ -626,7 +626,7 @@ body {
       text-align: center;
       font-family: FuturaStd_Medium;
       font-size: 16px;
-      top: 170px;
+      top: 700px;
       width: 80vw;
     }
     
@@ -635,7 +635,7 @@ body {
    text-align: center;
    font-family: FuturaStd_Medium;
    font-size: 24px;
-   top: 120px;
+   top: 650px;
    font-weight: bold;
 }
     
@@ -754,7 +754,7 @@ body {
 
 .noel h2{
     position: absolute;
-    top: 440px;
+    top: 400px;
     font-size: 18px;
     width: 80vw;
     font-weight: 600
@@ -805,11 +805,11 @@ body {
     }
     
         .conteneurGeneralConcours p:nth-child(3){
-     top:170px
+     top:700px
     }
     
     .conteneurGeneralConcours p:nth-child(2){
-   top: 120px
+   top: 650px
 }
     
         .noel{
@@ -906,7 +906,7 @@ body {
 
 .noel h2{
     position: absolute;
-    top: 440px;
+    top: 400px;
     font-size: 18px;
     width: 80vw;
     font-weight: 600
@@ -1056,7 +1056,7 @@ body {
 
 .noel h2{
     position: absolute;
-    top: 440px;
+    top: 400px;
     font-size: 18px;
     width: 90vw;
     font-weight: 600
@@ -1123,22 +1123,22 @@ body {
 
     
     .conteneurGeneralConcours p:nth-child(4){
-        
+        top: 780px;
     }
     
     .conteneurGeneralConcours p:nth-child(5){
         width: 90vw;
         font-size: 13px;
-        
+        top: 835px;
     }
     
     .conteneurGeneralConcours p:nth-child(6){
        
-        
+        top: 860px;
     }
     
     .conteneurGeneralConcours p:nth-child(7){
-        
+        top: 900px;
     }
     
     .conteneurGeneralConcours p:nth-child(8){
@@ -1243,7 +1243,7 @@ body {
 
 .noel h2{
     position: absolute;
-    top: 440px;
+    top: 400px;
     font-size: 18px;
     width: 90vw;
     font-weight: 600

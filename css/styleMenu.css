@@ -576,7 +576,7 @@ body {
         top: 50%;
         left: 50%;
         backface-visibility: hidden;
-        transform: translate(-50%,-50%) scale(0.4, 0.4);
+        transform: translate(-50%,-42%) scale(0.3, 0.3);
     }   
     
     .logoTxtNav > p {
@@ -642,6 +642,21 @@ body {
         width: 140px;
         color: #263C46;
     }
+    
+}
+
+@media (max-height: 620px) {
+    
+    .infoPageAcc{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 8.4em;
+    background: rgba(155, 240, 82, 0.3);
+    font-family: FuturaStd_Medium;
+    font-size: 13px;
+    line-height: 24px;
+}
     
 }
 
