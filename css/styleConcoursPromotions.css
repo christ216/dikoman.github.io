@@ -345,7 +345,7 @@ body {
    text-align: center;
    font-family: FuturaStd_Medium;
    font-size: 24px;
-   top: 650px;
+   top: 150px;
    font-weight: bold;
 }
 
@@ -354,7 +354,7 @@ body {
    text-align: center;
    font-family: FuturaStd_Medium;
    font-size: 16px;
-   top: 700px;
+   top: 200px;
    width: 60vw;
 }
 
@@ -363,7 +363,7 @@ body {
    text-align: center;
    font-family: FuturaStd_Medium;
    font-size: 24px;
-   top: 780px;
+   top: 280px;
    font-weight: bold;
 }
 
@@ -372,7 +372,7 @@ body {
    text-align: center;
    font-family: FuturaStd_Medium;
    font-size: 16px;
-   top: 830px;
+   top: 330px;
    width: 50vw;
 }
 
@@ -381,7 +381,7 @@ body {
    text-align: center;
    font-family: FuturaStd_Medium;
    font-size: 24px;
-   top: 870px;
+   top: 370px;
    font-weight: bold;
 }
 
@@ -390,7 +390,7 @@ body {
    text-align: center;
    font-family: FuturaStd_Medium;
    font-size: 16px;
-   top: 920px;
+   top: 420px;
    width: 50vw;
 }
 
@@ -406,6 +406,7 @@ body {
 }
 
 .noel{
+    display:none;
     position: absolute;
     font-family: FuturaStd_Medium;
     top: 100px;
@@ -626,7 +627,7 @@ body {
       text-align: center;
       font-family: FuturaStd_Medium;
       font-size: 16px;
-      top: 700px;
+      top: 200px;
       width: 80vw;
     }
     
@@ -635,7 +636,7 @@ body {
    text-align: center;
    font-family: FuturaStd_Medium;
    font-size: 24px;
-   top: 650px;
+   top: 150px;
    font-weight: bold;
 }
     
@@ -805,11 +806,11 @@ body {
     }
     
         .conteneurGeneralConcours p:nth-child(3){
-     top:700px
+     top:200px
     }
     
     .conteneurGeneralConcours p:nth-child(2){
-   top: 650px
+   top: 150px
 }
     
         .noel{
