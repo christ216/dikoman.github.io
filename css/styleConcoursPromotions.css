@@ -353,9 +353,10 @@ body {
    position: absolute;
    text-align: center;
    font-family: FuturaStd_Medium;
-   font-size: 16px;
-   top: 200px;
+   font-size: 24px;
+   top: 220px;
    width: 60vw;
+   font-weight: bold;
 }
 
 .conteneurGeneralConcours p:nth-child(4){
@@ -363,7 +364,7 @@ body {
    text-align: center;
    font-family: FuturaStd_Medium;
    font-size: 24px;
-   top: 280px;
+   top: 250px;
    font-weight: bold;
 }
 
@@ -622,45 +623,6 @@ body {
         color: #263C46;
     }
     
-    .conteneurGeneralConcours p:nth-child(3){
-      position: absolute;
-      text-align: center;
-      font-family: FuturaStd_Medium;
-      font-size: 16px;
-      top: 200px;
-      width: 80vw;
-    }
-    
-    .conteneurGeneralConcours p:nth-child(2){
-   position: absolute;
-   text-align: center;
-   font-family: FuturaStd_Medium;
-   font-size: 24px;
-   top: 150px;
-   font-weight: bold;
-}
-    
-    .conteneurGeneralConcours p:nth-child(8){
-   position: absolute;
-   text-align: center;
-   font-family: FuturaStd_Medium;
-   font-size: 16px;
-   top: 50px;
-   width: 80vw;
-   border: 3px outset #c3d667;
-   font-weight: bold;
-}
-
-
-    
-     .conteneurGeneralConcours p:nth-child(5){
-      width: 80vw;
-    }
-    
-    .conteneurGeneralConcours p:nth-child(7){
-      width: 80vw;
-    }
-    
     .noel{
     position: absolute;
     font-family: FuturaStd_Medium;
@@ -779,38 +741,6 @@ body {
       left: 93.4vw;
   } 
     
-    .conteneurGeneralConcours p:nth-child(1){
-        height: 2em;
-        font-family: FuturaStd_Medium;
-        font-size: 1.5em;
-        
-        font-weight: bold;
-        letter-spacing: 0.04em;
-    }
-    
-    .conteneurGeneralConcours p:nth-child(2){
-        top: 140px;
-    }
-    
-    .conteneurGeneralConcours p:nth-child(3){
-        font-size: 14px;
-        top: 190px
-    }
-  
-    .conteneurGeneralConcours p:nth-child(5){
-        font-size: 14px;
-    }
-    
-    .conteneurGeneralConcours p:nth-child(7){
-        font-size: 14px;
-    }
-    
-        .conteneurGeneralConcours p:nth-child(3){
-     top:200px
-    }
-    
-    .conteneurGeneralConcours p:nth-child(2){
-   top: 150px
 }
     
         .noel{

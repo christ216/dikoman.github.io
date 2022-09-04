@@ -353,7 +353,7 @@ body {
     display: flex;
     position: absolute;
     min-width: 200px;
-    top: 608px;
+    top: 408px;
     border-bottom: 3px ridge #263C46 ;
     opacity: 0.8;
 }
@@ -362,7 +362,7 @@ body {
     display: flex;
     position: absolute;
     min-width: 200px;
-    top: 1308px;
+    top: 1000px;
     border-bottom: 3px ridge #263C46 ;
     opacity: 0.8;
 }
@@ -380,7 +380,7 @@ body {
     display: flex;
     flex-direction: row;
     position: absolute;
-    top: 428px;
+    top: 268px;
     width: 100vw;
     justify-content: center;
     text-align: center;
@@ -390,7 +390,7 @@ body {
     display: flex;
     flex-direction: row;
     position: absolute;
-    top: 198px;
+    top: 45px;
     width: 100vw;
     justify-content: center;
     text-align: center;
@@ -483,7 +483,7 @@ form button{
 .texteFormulaire{
     position: absolute;
     text-align: center;
-    top: 1350px;
+    top: 1050px;
     font-family: FuturaStd_Medium;
     font-size: 2em;
 }
@@ -505,7 +505,7 @@ form button{
 .containerLocal{
     display: flex;
     position: absolute;
-    top: 695px;
+    top: 455px;
     width: 65vw;
     justify-content: center;
     align-items: center;
@@ -663,7 +663,7 @@ form button{
         display: flex;
         flex-direction: row;
         position: absolute;
-        top: 428px;
+        top: 268px;
         width: 100vw;
         justify-content: center;
         text-align: center;
@@ -673,7 +673,7 @@ form button{
         display: flex;
         flex-direction: row;
         position: absolute;
-        top: 198px;
+        top: 45px;
         width: 100vw;
         justify-content: center;
         text-align: center;
@@ -730,7 +730,7 @@ form button{
     .containerLocal{
         display: flex;
         position: absolute;
-        top: 695px;
+        top: 455px;
         width: 100vw;
         justify-content: center;
         align-items: center;
@@ -760,7 +760,7 @@ form button{
         display: flex;
         position: absolute;
         min-width: 200px;
-        top: 1708px;
+        top: 1000px;
         border-bottom: 3px ridge #263C46 ;
         opacity: 0.8;
     }
@@ -782,7 +782,7 @@ form button{
     .texteFormulaire{
         position: absolute;
         text-align: center;
-        top: 1730px;
+        top: 1050px;
         font-family: FuturaStd_Medium;
         font-size: 2em;
     }
@@ -840,7 +840,7 @@ form button{
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 428px;
+        top: 268px;
         width: 100vw;
         justify-content: center;
         text-align: center;
@@ -850,7 +850,7 @@ form button{
         display: flex;
         flex-direction: row;
         position: absolute;
-        top: 198px;
+        top: 458px;
         width: 100vw;
         justify-content: center;
         text-align: center;
@@ -908,7 +908,7 @@ form button{
     .containerLocal{
         display: flex;
         position: absolute;
-        top: 839px;
+        top: 455px;
         width: 100vw;
         justify-content: center;
         align-items: center;
@@ -938,7 +938,7 @@ form button{
         display: flex;
         position: absolute;
         min-width: 200px;
-        top: 748px;
+        top: 408px;
         border-bottom: 3px ridge #263C46 ;
         opacity: 0.8;
     }
@@ -947,14 +947,14 @@ form button{
         display: flex;
         position: absolute;
         min-width: 200px;
-        top: 1745px;
+        top: 1000px;
         border-bottom: 3px ridge #263C46 ;
         opacity: 0.8;
     }
     .texteFormulaire{
         position: absolute;
         text-align: center;
-        top: 1795px;
+        top: 1050px;
         font-family: FuturaStd_Medium;
         font-size: 1.5em;
     }
@@ -1097,7 +1097,7 @@ form button{
         display: flex;
         position: absolute;
         min-width: 200px;
-        top: 768px;
+        top: 408px;
         border-bottom: 3px ridge #263C46 ;
         opacity: 0.8;
     }
